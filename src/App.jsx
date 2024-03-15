@@ -5,7 +5,9 @@ function App() {
 
   return (
     <>
-      <Header></Header>
+      <section className='my-10'>
+        <Header></Header>
+      </section>
     </>
   )
 }
