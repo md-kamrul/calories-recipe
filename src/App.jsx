@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
+import OurRecipes from './components/OurRecipes/OurRecipes';
 
 function App() {
 
@@ -14,6 +15,11 @@ function App() {
       {/* hero section */}
       <section className='mb-24'>
         <Hero></Hero>
+      </section>
+
+      {/* Our Recipes section */}
+      <section>
+        <OurRecipes></OurRecipes>
       </section>
     </>
   )
