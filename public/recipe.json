@@ -1,0 +1,96 @@
+[
+    {
+        "recipe_id": 1,
+        "recipe_name": "Spicy Thai Basil Chicken",
+        "short_description": "A flavorful Thai dish with chicken, basil, and spices.",
+        "ingredients": [
+            "550 g chicken",
+            "120 ml soy sauce",
+            "200 g basil leaves",
+            "400 g mushrooms"
+        ],
+        "preparing_time": "30 min",
+        "calories": "320 calories",
+        "recipe_image": "https://i.ibb.co/FmWCbzq/Spicy-Thai-Basil-Chicken.jpg"
+    },
+    {
+        "recipe_id": 2,
+        "recipe_name": "Mushroom Risotto",
+        "short_description": "Creamy and savory risotto with mushrooms and parmesan cheese.",
+        "ingredients": [
+            "300 g Arborio rice",
+            "500 g mushrooms",
+            "1 onion",
+            "2 cloves garlic",
+            "1 L vegetable broth",
+            "100 g parmesan cheese"
+        ],
+        "preparing_time": "45 min",
+        "calories": "380 calories",
+        "recipe_image": "https://i.ibb.co/QjvvPqx/Mushroom-Risotto.jpg"
+    },
+    {
+        "recipe_id": 3,
+        "recipe_name": "Classic Margherita Pizza",
+        "short_description": "Simple and delicious pizza topped with tomatoes, mozzarella, and basil.",
+        "ingredients": [
+            "300 g pizza dough",
+            "200 g tomatoes",
+            "200 g mozzarella cheese",
+            "50 g fresh basil leaves",
+            "2 tbsp olive oil"
+        ],
+        "preparing_time": "25 min",
+        "calories": "250 calories",
+        "recipe_image": "https://i.ibb.co/Ss1nvRz/Classic-Margherita-Pizza.png"
+    },
+    {
+        "recipe_id": 4,
+        "recipe_name": "Vegetable Stir-Fry",
+        "short_description": "A quick and healthy stir-fry with colorful vegetables and tofu.",
+        "ingredients": [
+            "300 g tofu",
+            "1 red bell pepper",
+            "1 green bell pepper",
+            "1 yellow bell pepper",
+            "1 carrot",
+            "100 g broccoli",
+            "3 tbsp soy sauce"
+        ],
+        "preparing_time": "20 min",
+        "calories": "180 calories",
+        "recipe_image": "https://i.ibb.co/2WM3RmR/Vegetable-Stir-Fry.jpg"
+    },
+    {
+        "recipe_id": 5,
+        "recipe_name": "Creamy Garlic Shrimp Pasta",
+        "short_description": "Rich and indulgent pasta dish with succulent shrimp and creamy garlic sauce.",
+        "ingredients": [
+            "400 g spaghetti",
+            "300 g shrimp",
+            "4 cloves garlic",
+            "200 ml heavy cream",
+            "50 g parmesan cheese",
+            "1 tbsp butter"
+        ],
+        "preparing_time": "35 min",
+        "calories": "420 calories",
+        "recipe_image": "https://i.ibb.co/Tm6FtD3/Creamy-Garlic-Shrimp-Pasta.jpg"
+    },
+    {
+        "recipe_id": 6,
+        "recipe_name": "Quinoa Salad with Avocado",
+        "short_description": "A refreshing and nutritious salad with quinoa, avocado, and mixed greens.",
+        "ingredients": [
+            "200 g quinoa",
+            "1 avocado",
+            "100 g mixed greens",
+            "1 cucumber",
+            "1 bell pepper",
+            "2 tbsp lemon juice"
+        ],
+        "preparing_time": "15 min",
+        "calories": "300 calories",
+        "recipe_image": "https://i.ibb.co/nwF2png/Quinoa-Salad-with-Avocado.jpg"
+    }
+]
