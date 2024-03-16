@@ -12,7 +12,7 @@ function App() {
       </section>
 
       {/* hero section */}
-      <section>
+      <section className='mb-24'>
         <Hero></Hero>
       </section>
     </>
