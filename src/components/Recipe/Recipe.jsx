@@ -9,7 +9,7 @@ const Recipe = ({ recipe }) => {
     return (
         <div className='w-[80%] md:w-full mx-auto'>
 
-            <div className="card w-96 border-2 border-[#28282833] ml-[10%] md:ml-0">
+            <div className="card w-96 border-2 border-[#28282833] md:ml-0">
                 <figure className="p-6">
                     <img src={recipe_image} alt="menu image" className="rounded-xl" />
                 </figure>

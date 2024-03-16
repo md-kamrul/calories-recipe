@@ -15,7 +15,7 @@ const OurRecipes = () => {
             </div>
 
             {/* recipes body */}
-            <div className="flex flex-row gap-10">
+            <div className="flex flex-col md:flex-row gap-4">
 
                 {/* recipes */}
                 <div className="">

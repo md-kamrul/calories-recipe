@@ -2,14 +2,14 @@ const WaitingList = () => {
     return (
         <div className="w-[90%] mx-auto border border-[#28282833] rounded-2xl p-3">
 
-            <div className="text-center">
+            <div className="text-center w-full">
                 <h1 className="text-[#282828] font-semibold text-2xl mb-6">
                     Want To Cook: <span>00</span>
                 </h1>
                 <hr className="border border-[#28282833] mb-4" />
             </div>
 
-            <div className="">
+            <div className="w-full">
                 <div className="text-[#878787]">
                     <table className="table table-zebra">
                         {/* head */}
@@ -30,9 +30,9 @@ const WaitingList = () => {
                                 <td>20 minutes</td>
                                 <td>400 calories</td>
                                 <td>
-                                    <div className="card-actions">
-                                        <button className="btn bg-[#0BE58A] border-2 border-[#0BE58A] hover:bg-[#0be58a65] hover:border-[#0BE58A] text-[#150B2B] mr-6 rounded-[50px] font-semibold">Preparing</button>
-                                    </div>
+                                    {/* <div className="card-actions"> */}
+                                        <button className="btn bg-[#0BE58A] border-2 border-[#0BE58A] hover:bg-[#0be58a65] hover:border-[#0BE58A] text-[#150B2B]  rounded-[50px] font-semibold text-[12px] p-2">Preparing</button>
+                                    {/* </div> */}
                                 </td>
                             </tr>
                             {/* row 2 */}
