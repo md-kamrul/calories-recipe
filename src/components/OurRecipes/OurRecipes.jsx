@@ -1,4 +1,5 @@
 import Recipes from "../Recipes/Recipes";
+import WaitingList from "../WaitingList/WaitingList";
 
 const OurRecipes = () => {
     return (
@@ -14,16 +15,17 @@ const OurRecipes = () => {
             </div>
 
             {/* recipes body */}
-            <div className="flex flex-col md:flex-row justify-between">
+            <div className="flex flex-row gap-10">
 
                 {/* recipes */}
-                <div>
+                <div className="">
                     <Recipes></Recipes>
                 </div>
 
                 {/* cooking list */}
-                <div>
-                    <h1>recipes llist</h1>
+                <div className= "">
+                   
+                    <WaitingList></WaitingList>
 
                 </div>
 
