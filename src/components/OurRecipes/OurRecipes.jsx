@@ -9,10 +9,17 @@ const OurRecipes = () => {
     const [wantToCook, setWantToCook] = useState([]);
 
     const clickWantToCook = recipe => {
-        console.log(recipe);
+        // console.log(recipe);
 
-        let newWantToCook = [...wantToCook, recipe];
-        setWantToCook(newWantToCook);
+        const isExist = wantToCook.find(item => item.recipe_id == recipe.recipe_id);
+        console.log(isExist);
+        if (!isExist) {
+            let newWantToCook = [...wantToCook, recipe];
+            setWantToCook(newWantToCook);
+        }
+        else { 
+            alert("ok");
+        }
 
     }
 
@@ -38,12 +45,12 @@ const OurRecipes = () => {
 
                 {/* cooking list */}
                 <div className="w-[60%] mx-auto flex flex-col gap-5">
-                <div className="w-full">
+                    <div className="w-full">
                         <WaitingList wantToCook={wantToCook}></WaitingList>
-                </div>
-                <div>
-                    <CurrentlyCooking></CurrentlyCooking>
-                </div>
+                    </div>
+                    <div>
+                        <CurrentlyCooking></CurrentlyCooking>
+                    </div>
                 </div>
 
             </div>
