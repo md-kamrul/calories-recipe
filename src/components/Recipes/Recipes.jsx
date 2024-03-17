@@ -6,7 +6,7 @@ const Recipes = ({ clickWantToCook}) => {
 
     const [recipes, setRecipes] = useState([]);
     useEffect(() => {
-        fetch('../../../public/recipe.json')
+        fetch('recipe.json')
             .then(res => res.json())
             .then(data => setRecipes(data))
     }, []);
