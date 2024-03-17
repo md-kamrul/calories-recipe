@@ -14,10 +14,10 @@ const CurrentlyCooking = () => {
             <div className="w-full">
                 <div className="text-[#878787]">
                     <div className="w-full md:w-[80%] mx-auto flex flex-row justify-between items-center">
-                        <div className="md:ml-[-13%]">ID</div>
-                        <div className="ml-[-30%] md:ml-0">Name</div>
-                        <div className="ml-[-10%] md:ml-0">Time</div>
-                        <div className="ml-[-50%] md:ml-0">Calories</div>
+                        <div className="">ID</div>
+                        <div className=" md:ml-0">Name</div>
+                        <div className=" md:ml-0">Time</div>
+                        <div className=" md:ml-0">Calories</div>
                         <div className="text-white ">button</div>
                     </div>
                     <div>
