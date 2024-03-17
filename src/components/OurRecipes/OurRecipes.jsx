@@ -32,10 +32,8 @@ const OurRecipes = () => {
                 </div>
 
                 {/* cooking list */}
-                <div className="">
-
+                <div className="w-[60%] mx-auto">
                     <WaitingList wantToCook={wantToCook}></WaitingList>
-
                 </div>
 
             </div>
