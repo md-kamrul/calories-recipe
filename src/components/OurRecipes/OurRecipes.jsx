@@ -1,7 +1,16 @@
+import { useState } from "react";
 import Recipes from "../Recipes/Recipes";
 import WaitingList from "../WaitingList/WaitingList";
+import PropTypes from 'prop-types';
 
 const OurRecipes = () => {
+
+    const [wantToCook, setWantToCook] = useState([]);
+    const clickWantToCook = recipe => {
+        const newWantToCook = [...wantToCook, recipe];
+        setWantToCook(newWantToCook);
+    }
+
     return (
         <div className="mb-12">
 
@@ -19,13 +28,13 @@ const OurRecipes = () => {
 
                 {/* recipes */}
                 <div className="">
-                    <Recipes></Recipes>
+                    <Recipes clickWantToCook={clickWantToCook}></Recipes>
                 </div>
 
                 {/* cooking list */}
-                <div className= "">
-                   
-                    <WaitingList></WaitingList>
+                <div className="">
+
+                    <WaitingList wantToCook={wantToCook}></WaitingList>
 
                 </div>
 
@@ -34,5 +43,9 @@ const OurRecipes = () => {
         </div>
     );
 };
+
+OurRecipes.propTypes = {
+    clickWantToCook: PropTypes.func
+}
 
 export default OurRecipes;

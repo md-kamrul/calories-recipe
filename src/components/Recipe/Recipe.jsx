@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { IoMdTime } from "react-icons/io";
 import { SlEnergy } from "react-icons/sl";
 
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, clickWantToCook }) => {
 
     const { recipe_image, recipe_name, short_description, ingredients, preparing_time, calories } = recipe;
 
@@ -24,23 +24,23 @@ const Recipe = ({ recipe }) => {
                     {
                         ingredients.map(ingredient =>
                             <ul>
-                            <li>{ ingredient}</li>
-                        </ul>)
+                                <li>{ingredient}</li>
+                            </ul>)
                     }
 
                     <hr className='text-[#2828281A] mb-6' />
                     <div className='flex flex-row justify-between items-center'>
-                    <div className='flex flex-row gap-1 items-center'>
-                        <IoMdTime />
-                        <p>{preparing_time}</p>
-                    </div>
-                    <div className='flex flex-row gap-1 items-center'>
-                        <SlEnergy />
-                        <p>{calories}</p>
-                    </div>
+                        <div className='flex flex-row gap-1 items-center'>
+                            <IoMdTime />
+                            <p>{preparing_time}</p>
+                        </div>
+                        <div className='flex flex-row gap-1 items-center'>
+                            <SlEnergy />
+                            <p>{calories}</p>
+                        </div>
                     </div>
                     <div className="card-actions">
-                        <button className="btn bg-[#0BE58A] border-2 border-[#0BE58A] hover:bg-[#0be58a65] hover:border-[#0BE58A] text-[#150B2B] mr-6 rounded-[50px] mt-6 font-semibold text-lg">Want to Cook</button>
+                        <button onClick={() => clickWantToCook(recipe)} className="btn bg-[#0BE58A] border-2 border-[#0BE58A] hover:bg-[#0be58a65] hover:border-[#0BE58A] text-[#150B2B] mr-6 rounded-[50px] mt-6 font-semibold text-lg">Want to Cook</button>
                     </div>
                 </div>
             </div>
@@ -49,6 +49,7 @@ const Recipe = ({ recipe }) => {
 };
 
 Recipe.propTypes = {
+    clickWantToCook: PropTypes.func,
     recipe: PropTypes.object
 };
 
