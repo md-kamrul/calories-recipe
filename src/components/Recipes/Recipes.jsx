@@ -14,9 +14,9 @@ const Recipes = ({ clickWantToCook}) => {
     return (
         <div className="">
             <div className="grid grid-cols-1 gap-4">
-                {
-                    recipes.map(recipe =>
-                        <Recipe key={recipe.recipe_id} recipe={recipe} clickWantToCook={clickWantToCook}></Recipe>)
+            {
+                    recipes.map((recipe, idx) =>
+                        <Recipe key={idx} recipe={recipe} clickWantToCook={clickWantToCook}></Recipe>)
                 }
             </div>
         </div>

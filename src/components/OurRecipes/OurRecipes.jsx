@@ -2,13 +2,18 @@ import { useState } from "react";
 import Recipes from "../Recipes/Recipes";
 import WaitingList from "../WaitingList/WaitingList";
 import PropTypes from 'prop-types';
+import CurrentlyCooking from "../CurrentlyCooking/CurrentlyCooking";
 
 const OurRecipes = () => {
 
     const [wantToCook, setWantToCook] = useState([]);
+
     const clickWantToCook = recipe => {
-        const newWantToCook = [...wantToCook, recipe];
+        console.log(recipe);
+
+        let newWantToCook = [...wantToCook, recipe];
         setWantToCook(newWantToCook);
+
     }
 
     return (
@@ -32,8 +37,13 @@ const OurRecipes = () => {
                 </div>
 
                 {/* cooking list */}
-                <div className="w-[60%] mx-auto">
-                    <WaitingList wantToCook={wantToCook}></WaitingList>
+                <div className="w-[60%] mx-auto flex flex-col gap-5">
+                <div className="w-full">
+                        <WaitingList wantToCook={wantToCook}></WaitingList>
+                </div>
+                <div>
+                    <CurrentlyCooking></CurrentlyCooking>
+                </div>
                 </div>
 
             </div>
