@@ -14,17 +14,17 @@ const CurrentlyCooking = () => {
             <div className="w-full">
                 <div className="text-[#878787]">
                     <div className="w-full md:w-[80%] mx-auto flex flex-row justify-between items-center">
-                        <div className="text-white ">Num</div>
-                        <div>Name</div>
-                        <div>Time</div>
-                        <div>Calories</div>
+                        <div className="md:ml-[-13%]">ID</div>
+                        <div className="ml-[-30%] md:ml-0">Name</div>
+                        <div className="ml-[-10%] md:ml-0">Time</div>
+                        <div className="ml-[-50%] md:ml-0">Calories</div>
                         <div className="text-white ">button</div>
                     </div>
-                    {/* <div>
-                        {
-                            wantToCook.map(singleWantToCook => <SingleWaitingList key={singleWantToCook.recipe_id} singleWantToCook={singleWantToCook} number={wantToCook.length}></SingleWaitingList>)
-                        }
-                    </div> */}
+                    <div>
+                        {/* {
+                            wantToCook.map((singleWantToCook, idx) => <SingleWaitingList key={idx} singleWantToCook={singleWantToCook}></SingleWaitingList>)
+                        } */}
+                    </div>
                 </div>
             </div>
 

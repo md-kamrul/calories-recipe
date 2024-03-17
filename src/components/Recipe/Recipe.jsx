@@ -22,7 +22,7 @@ const Recipe = ({ recipe, clickWantToCook }) => {
                     <p className='text-[Dark 02] font-medium text-lg mb-4'>Ingredinets: {ingredients.length}</p>
                     {/* ingredinets list */}
                     {
-                        ingredients.map(ingredient =>
+                        ingredients.map((ingredient) =>
                             <ul>
                                 <li>{ingredient}</li>
                             </ul>)
