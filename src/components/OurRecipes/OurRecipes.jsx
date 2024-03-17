@@ -12,13 +12,12 @@ const OurRecipes = () => {
         // console.log(recipe);
 
         const isExist = wantToCook.find(item => item.recipe_id == recipe.recipe_id);
-        console.log(isExist);
         if (!isExist) {
             let newWantToCook = [...wantToCook, recipe];
             setWantToCook(newWantToCook);
         }
-        else { 
-            alert("ok");
+        else {
+            alert("already exist...");
         }
 
     }
