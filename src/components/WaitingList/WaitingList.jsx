@@ -1,7 +1,7 @@
 import SingleWaitingList from "../SingleWaitingList";
 import PropTypes from 'prop-types';
 
-const WaitingList = ({ wantToCook }) => {
+const WaitingList = ({ wantToCook, clickPreparing }) => {
     return (
         <div className="w-[150%] md:w-[90%] md:mx-auto ml-[-20%] md:ml-0 border border-[#28282833] rounded-2xl p-3">
 
@@ -14,7 +14,7 @@ const WaitingList = ({ wantToCook }) => {
 
             <div className="w-full">
                 <div className="text-[#878787]">
-                    <div className="w-full md:w-[80%] mx-auto flex flex-row justify-between items-center">
+                    <div className="w-full mx-auto flex flex-row justify-between items-center">
                         <div className="">ID</div>
                         <div className=" md:ml-0">Name</div>
                         <div className=" md:ml-0">Time</div>
@@ -23,7 +23,7 @@ const WaitingList = ({ wantToCook }) => {
                     </div>
                     <div>
                         {
-                            wantToCook.map((singleWantToCook, idx) => <SingleWaitingList key={idx} singleWantToCook={singleWantToCook}></SingleWaitingList>)
+                            wantToCook.map((singleWantToCook, idx) => <SingleWaitingList key={idx} singleWantToCook={singleWantToCook} clickPreparing={clickPreparing}></SingleWaitingList>)
                         }
                     </div>
                 </div>
@@ -34,7 +34,8 @@ const WaitingList = ({ wantToCook }) => {
 };
 
 WaitingList.propTypes = {
-    wantToCook: PropTypes.object
+    wantToCook: PropTypes.object,
+    clickPreparing: PropTypes.func
 };
 
 export default WaitingList;

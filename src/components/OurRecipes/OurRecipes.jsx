@@ -7,9 +7,9 @@ import CurrentlyCooking from "../CurrentlyCooking/CurrentlyCooking";
 const OurRecipes = () => {
 
     const [wantToCook, setWantToCook] = useState([]);
+    const [preparingToCook, setPreparingToCook] = useState([]);
 
     const clickWantToCook = recipe => {
-        // console.log(recipe);
 
         const isExist = wantToCook.find(item => item.recipe_id == recipe.recipe_id);
         if (!isExist) {
@@ -20,6 +20,15 @@ const OurRecipes = () => {
             alert("already exist...");
         }
 
+    }
+
+
+    const clickPreparing = (gotRecipe) => {
+        const remaining = wantToCook.filter(wantToCookSingle => wantToCookSingle.recipe_id !== gotRecipe.recipe_id);
+        setWantToCook(remaining);
+
+        let newPreparing = [...preparingToCook, gotRecipe];
+        setPreparingToCook(newPreparing);
     }
 
     return (
@@ -45,10 +54,10 @@ const OurRecipes = () => {
                 {/* cooking list */}
                 <div className="w-[60%] mx-auto flex flex-col gap-5">
                     <div className="w-full">
-                        <WaitingList wantToCook={wantToCook}></WaitingList>
+                        <WaitingList wantToCook={wantToCook} clickPreparing={clickPreparing}></WaitingList>
                     </div>
                     <div>
-                        <CurrentlyCooking></CurrentlyCooking>
+                        <CurrentlyCooking preparingToCook={preparingToCook}></CurrentlyCooking>
                     </div>
                 </div>
 
