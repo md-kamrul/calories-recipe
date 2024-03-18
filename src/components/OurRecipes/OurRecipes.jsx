@@ -4,6 +4,9 @@ import WaitingList from "../WaitingList/WaitingList";
 import PropTypes from 'prop-types';
 import CurrentlyCooking from "../CurrentlyCooking/CurrentlyCooking";
 
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const OurRecipes = () => {
 
     const [wantToCook, setWantToCook] = useState([]);
@@ -17,7 +20,7 @@ const OurRecipes = () => {
             setWantToCook(newWantToCook);
         }
         else {
-            alert("already exist...");
+            toast("already exist...");
         }
 
     }
